@@ -117,7 +117,7 @@ void laptop::gasan_ngoding(string ngoding){
 }
 
 void laptop::harga(string harga){
-	cout<<gengsi<<", sepadan ja lwn speknya \n";
+	cout<<harga<<", sepadan ja lwn speknya \n";
 }
 
 void laptop::gengsi_banar_ae(string gengsi){
