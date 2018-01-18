@@ -4,8 +4,14 @@ using namespace std;
 
 class laptop{
 	public:
+		void desain(string tampilan);
 		void bemainan(string main);
-		string tipe;
+		void menggawi_tugas(string tugas);
+		void gasan_gawian(string gawian);
+		void gasan_ngoding(string ngoding);
+		void gengsi_banar_ae(string gengsi);
+		string tipe, prosesor, vga, ram, vram, os, hdd, ssd, layar;
+		double barat; 
 };
 
 int main () {
