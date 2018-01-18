@@ -9,8 +9,9 @@ class laptop{
 		void menggawi_tugas(string tugas);
 		void gasan_gawian(string gawian);
 		void gasan_ngoding(string ngoding);
+		void harga(string harga);
 		void gengsi_banar_ae(string gengsi);
-		string tipe, prosesor, vga, ram, vram, os, hdd, ssd, layar;
+		string tipe, prosesor, vga, ram, vram, os, hdd, ssd, layar, baru, bekas;
 		double barat; 
 };
 
@@ -27,6 +28,8 @@ int main () {
 	laptopAsus.ssd      = "512 GB PCIE Gen3X4 SSD                      |\n";	
 	laptopAsus.layar    = "15.6 inch Blacklit Anti-Glare LED           |\n";
 	laptopAsus.barat    = 2.25;
+	laptopAsus.baru     = "Rp 50.299.000                               |\n";
+	laptopAsus.bekas    = "-                                           |\n";
 		
 	
 	cout << "+=================================================================+"<<endl;
@@ -42,12 +45,15 @@ int main () {
 	cout << "| Solid State Drive = "<<(laptopAsus.ssd);
 	cout << "| Layar             = "<<(laptopAsus.layar);
 	cout << "| Barat             = "<<(laptopAsus.barat)<<" Kg					  |\n";
+	cout << "| Harga baru        = "<<(laptopAsus.baru);
+	cout << "| Harga bekas       = "<<(laptopAsus.bekas);
 	cout << "+=================================================================+"<<endl;
 	laptopAsus.desain("Desain laptop nya tipis banar gasan laptop gaming, mouse pad nya kw beganti jadi number pad");
 	laptopAsus.bemainan("Kawa bemainan game barat, kaya The Witcher 3, Final Fnatasy XV dll");
 	laptopAsus.menggawi_tugas("Kawa jua menggawi tugas sekolah, kampus, banyak ae lagi");
 	laptopAsus.gasan_gawian("Gasan gawian kawa banar, apalagi gasan ngetik");
 	laptopAsus.gasan_ngoding("Mun soal ngoding");
+	laptopAsus.harga("Mun harga jangan ditanya lg, Larang bnr (sawat bejual ginjal wkwkwkwk)");
 	laptopAsus.gengsi_banar_ae("Artinya aku kawa nukar laptop larang");
 
 	laptopAcer.tipe     = "ACER Predator Triton 700                    |\n";
@@ -60,6 +66,8 @@ int main () {
 	laptopAcer.ssd      = "512 GB SSD                                  |\n";	
 	laptopAcer.layar    = "15.6 inch Blacklit LED Full HD              |\n";
 	laptopAcer.barat    = 2.40;
+	laptopAsus.baru     = "Rp 52.299.000                               |\n";
+	laptopAsus.bekas    = "-                                           |\n";
 		
 	
 	cout << "+=================================================================+"<<endl;
@@ -75,13 +83,16 @@ int main () {
 	cout << "| Solid State Drive = "<<(laptopAcer.ssd);
 	cout << "| Layar             = "<<(laptopAcer.layar);
 	cout << "| Barat             = "<<(laptopAcer.barat)<<" Kg					  |\n";
+	cout << "| Harga baru        = "<<(laptopAcer.baru);
+	cout << "| Harga bekas       = "<<(laptopAcer.bekas);
 	cout << "+=================================================================+"<<endl;
 	laptopAcer.desain("Desain laptop nya tipis jua kaya ASUS ROG ZEPHYRUS, bedanya andakan mouse pad nya di atas pang");
 	laptopAcer.bemainan("Handak main game apakah lancar ja");
 	laptopAcer.menggawi_tugas("Menggawi tugas apapun kawa banar bos ae");
 	laptopAcer.gasan_gawian("Gasan gawian mantap jiwa");
 	laptopAcer.gasan_ngoding("Mengoding sampai ratusan bahkan ribuan");
-	laptopAcer.gengsi_banar_ae("Laptop larang, ngetik kada bisa, gengsi dong");
+	laptopAsus.harga("Harga beda 2 jt lwn ASUS ZEPHYRUS, sama ae Larang jua magin nya betambah larang (sawat bejual ginjal wkwkwkwk)");
+	laptopAcer.gengsi_banar_ae("Anak sultan nyatai kawa banar nukar");
 	
 }
 
@@ -103,6 +114,10 @@ void laptop::gasan_gawian(string gawian){
 
 void laptop::gasan_ngoding(string ngoding){
 	cout<<ngoding<<", jangan ditanya lg, sanggup sanak ae \n";
+}
+
+void laptop::harga(string harga){
+	cout<<gengsi<<", sepadan ja lwn speknya \n";
 }
 
 void laptop::gengsi_banar_ae(string gengsi){
